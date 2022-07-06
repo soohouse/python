@@ -27,16 +27,20 @@ driver.get('https://www.naver.com')
 
 time.sleep(1.5)
 
+# 뉴스 홈 클릭
 driver.find_element(By.XPATH,'//*[@id="NM_NEWSSTAND_HEADER"]/div[2]/a[1]').click()
 
 time.sleep(1.5)
 
+# 정치 탭 클릭
+driver.find_element(By.XPATH,'/html/body/section/header/div[2]/div/div/div[1]/div/div/ul/li[2]/a').click()
+
 for n in range(2,7):
-    driver.find_element(By.XPATH,'//*[@id="main_content"]/div/div[2]/div[1]/div[1]/div[1]/ul/li[n]/div/a').click()
+    driver.find_element(By.XPATH,'/html/body/section/header/div[2]/div/div/div[1]/div/div/ul/li[{n}]/a').click()
     for m in range(2,5):
         if m == 2:
             driver.find_element(By.XPATH,'//*[@id="NM_NEWSSTAND_HEADER"]/div[2]/a').click()
         else:
-            driver.find_element(By.XPATH,'//*[@id="NM_NEWSSTAND_HEADER"]/div[m]/a[1]').click()
+            driver.find_element(By.XPATH,'//*[@id="NM_NEWSSTAND_HEADER"]/div[{m}]/a[1]').click()
             
     

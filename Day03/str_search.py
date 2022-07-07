@@ -9,16 +9,13 @@
 # 내장 함수 len(): 순차형 자료(sequence)의 내부 데이터 개수를 구함.
 # len()은 문자열에서만 쓸 수 있는게 아니에요. 함수에요.
 
-from email import message
-
-
 s = 'python programming'
 
 count = 0
 for c in s:
     count += 1
-print('s의 글자 수: ', count)
-print('s의 글자 수: ', len(s))
+print('s의 글자 수:', count)
+print('s의 글자 수:', len(s))
 
 '''
 # 문자열 메서드 find(), rfind()
@@ -26,7 +23,7 @@ print('s의 글자 수: ', len(s))
 인덱스 번호를 알려줍니다.
 - find()는 앞에서부터, rfind()는 뒤에서부터 탐색
 '''
-print('_ * 40')
+print('- * 40')
 print(s.find('o'))
 print(s.rfind('o'))
 
@@ -38,10 +35,10 @@ print(s.find('메롱'))
 # 메서드 count(): 문자열 내부에 찾는 단어의 출현 횟수 반환.
 message = """
     내가 그린 기린 그림은 목이 긴 기린 그림이고
-    니가 그린 기린 그림은 목이 안 긴 기린 그림이다.
+    니가 그린 기린 그림은 목인 안 긴 기린 그림이다.
 """
 
-print('"기린" 단어의 출현 횟수:', message.count('기린'))
+print('"기린" 단어의 출현 횟수:',message.count('기린'))
 
 '''
 - 특정 문자가 있는 인덱스나 번호 및 횟수는 관심 없고
@@ -56,17 +53,18 @@ print('pro' in s)
 '''
 - 사용자에게 데이터를 입력받을 때 입력값의 형태를 검사하는 메서드
 
-1. isdecimal(): 모든 숫자가 숫자 형태인지를 검사.
+1. isdecimal(): 모든 문자가 숫자 형태인지를 검사.
 2. isalpha(): 모든 문자가 영문 알파벳인지를 검사.
 3. islower(): 모든 문자가 영문 소문자인지를 검사.
 4. isupper(): 모든 문자가 영문 대문자인지를 검사.
 '''
 
 print('-' * 40)
+
 print('15 + 8 = ???')
 
 while True:
-    answer = int(input('> '))
+    answer = input('> ')
 
     if answer.isdecimal():
         answer = int(answer)
@@ -79,3 +77,4 @@ while True:
         break
     else:
         print('틀렸습니다.')
+

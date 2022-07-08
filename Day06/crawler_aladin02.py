@@ -8,7 +8,7 @@ import codecs
 
 d = datetime.today()
 
-file_path = f'C:/Users/user/Desktop/java_web_LKM/python/crawling/알라딘 베스트셀러 1~400위_{d.year}_{d.month}_{d.day}.txt'
+file_path = f'/Users/dood/Desktop/java_web_JS/python/crawling/알라딘 베스트셀러 1~400위_{d.year}_{d.month}_{d.day}.txt'
 
 '''
 - with문을 사용하면 with 블록을 벗어나는 순간
@@ -30,7 +30,7 @@ codecs 모듈을 사용합니다.
 '''
 
 with codecs.open(file_path, mode='w', encoding='utf-8') as f:
-    driver = webdriver.Chrome('C:/Users/user/Desktop/java_web_LKM/python/chromedriver.exe')
+    driver = webdriver.Chrome('/Users/dood/Desktop/java_web_JS/python/chromedriver')
     driver.get('https://www.aladin.co.kr/shop/common/wbest.aspx?BranchType=1')
 
     rank = 1 # 순위 표시

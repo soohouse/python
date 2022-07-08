@@ -18,7 +18,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-driver = webdriver.Chrome('C:/Users/user/Desktop/java_web_LKM/python/chromedriver.exe')
+driver = webdriver.Chrome('/Users/dood/Desktop/java_web_JS/python/chromedriver')
 
 driver.get('https://www.naver.com')
 

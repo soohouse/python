@@ -5,8 +5,10 @@ import time as t
 # 뷰티풀수프 임포트
 from bs4 import BeautifulSoup
 
-# 웹 드라이버 활성화 및 알라딘 홈페이지 이동.
-driver = webdriver.Chrome('C:/Users/user/Desktop/java_web_LKM/python/chromedriver.exe')
+# 다운로드 받은 크롬 물리드라이버 가동 명령.
+driver = webdriver.Chrome('/Users/dood/Desktop/java_web_JS/python/chromedriver')
+
+# 물리 드라이버로 사이트 이동 명령
 driver.get('https://www.aladin.co.kr')
 
 t.sleep(1)
@@ -54,6 +56,7 @@ print('# 저자:', auth_info[0])
 print('# 출판사:', auth_info[1])
 print('# 출판일:', auth_info[2])
 print('# 가격:', book_price.split(', ')[0])
+
 
 
 

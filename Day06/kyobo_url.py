@@ -7,10 +7,10 @@ from datetime import datetime
 
 d = datetime.today()
 
-file_path = f'C:/Users/user/Desktop/java_web_LKM/python/crawling/교보 베스트셀러 1~50위({d.year}년{d.month}월).html'
+file_path = f'/Users/dood/Desktop/java_web_JS/python/crawling/교보 베스트셀러 1~50위({d.year}년{d.month}월).html'
 
 with codecs.open(file_path, mode='w', encoding='utf-8') as f:
-    driver = webdriver.Chrome('C:/Users/user/Desktop/java_web_LKM/python/chromedriver.exe')
+    driver = webdriver.Chrome('/Users/dood/Desktop/java_web_JS/python/chromedriver')
     driver.get('http://www.kyobobook.co.kr/bestSellerNew/bestseller.laf?orderClick=d79')
 
     time.sleep(1.5)

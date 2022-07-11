@@ -1,5 +1,4 @@
 
-
 '''
 * 예외 처리
 
@@ -33,10 +32,11 @@ try:
     n1 = int(input('정수1: '))
     n2 = int(input('정수2: '))
 
-    print(f'입력한 정수: {n1},{n2}')
+    print(f'입력한 정수: {n1}, {n2}')
 
     result = n1 / n2
     print(f'{n1} / {n2} = {result}')
+
 except:
     print('0을 입력하지 마세요!')
 

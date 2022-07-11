@@ -11,11 +11,12 @@
 def calc_sum(end):
     if end <= 0:
         raise ValueError
-        
+
     total = 0
     for n in range(end + 1):
         total += n
     return total
+
 try:
     result = calc_sum(100)
     print(result)

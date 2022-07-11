@@ -7,8 +7,7 @@
 파일명도 마지막에 입력받아서 생성하세요.)
 '''
 
-
-print('저장할 내용을 입력(\'그만\'이라고 입력 시 종료됩니다.)')
+print('저장할 내용을 입력(\'그만\' 이라고 입력 시 종료됩니다.)')
 
 user_input = ''
 while True:
@@ -18,7 +17,7 @@ while True:
     user_input += temp + '\n'
 
 f_name = input('파일명을 입력: ')
-f_path = f'/Users/dood/Desktop/java_web_JS/python/test/{f_name}.text'
+f_path = f'C:/Users/user/Desktop/java_web_LKM/python/test/{f_name}.txt'
 
 try:
     f = open(f_path, 'a')
@@ -29,5 +28,3 @@ except:
 finally:
     f.close()
 
-
-f.close()

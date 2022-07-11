@@ -1,4 +1,3 @@
-
 '''
 * points.txt 파일의 숫자값을 모두 읽어서
 총합과 평균을 구한 뒤
@@ -8,10 +7,8 @@
 
 import traceback as trace
 
-file_path = '/Users/dood/Desktop/java_web_JS/python/test/points.txt'
-
 try:
-    f = open(file_path, 'r')
+    f = open('C:/Users/user/Desktop/java_web_LKM/python/test/points.txt', 'r')
     numlist = f.read().split()
 except:
     print('파일 로드 실패!')
@@ -23,10 +20,11 @@ sum = 0
 for num in numlist:
     score = int(num)
     sum += score
+
 avg = sum / len(numlist)
 
 try:
-    f = open('/Users/dood/Desktop/java_web_JS/python/test/result.txt','w')
+    f = open('C:/Users/user/Desktop/java_web_LKM/python/test/result.txt', 'w')
     data = f'총점: {sum}점, 평균: {avg:0.2f}점'
     f.write(data)
     print('파일 저장이 완료되었습니다.')

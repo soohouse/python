@@ -38,16 +38,14 @@ ex) open('파일 경로', 모드)
 # 예외처리를 통해 안전하게 작성합니다.
 try:
     # 파일 저장 기능 (write, append)
-    file_path = r'/Users/dood/Desktop/java_web_JS/python/test/test.txt'
+    file_path = r'C:\Users\user\Desktop\java_web_LKM\python\test\test2.txt'
 
     # 파일 입출력을 실행하는 내장 함수 open()
     # 반환값으로 파일 입출력을 담당하는 객체가 리턴됩니다.
     # 첫번째 인수로 파일 경로를, 두번째 인수로 모드를 설정.
-    f = open(file_path, 'w')
+    f = open(file_path, 'a')
 
-    'w모드를 이용하여 이미 존재하는 파일 경로를 지정하면 덮어 씁니다.'
-
-    text = 'w모드는 지정한 경로에 파일을 작성할 때 사용하는 모드입니다.'
+    text = 'a모드는 기존 파일만 지정할 수 있는 것이 아닌 새 파일도 지정이 가능합니다.'
 
     # 파일을 저장할 때는 f.write() 메서드를 사용합니다.
     # 저장할 데이터를 인수로 전달합니다.
@@ -61,3 +59,7 @@ finally:
     # 파일 입출력은 하드디스크 자원을 사용하는 코드이므로
     # 반드시 사용 후 그 자원을 해제하여 메모리 누수를 방지합시다.
     f.close()
+
+
+
+

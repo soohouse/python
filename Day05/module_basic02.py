@@ -1,11 +1,11 @@
 
-# 모듈 내에 존재하는 변수, 함수, 클래스 등을 직접 임포트 하는 방법
+# 모듈 내에 존재하는 변수, 함수, 클래스 등을 직접 임포트 하는 방법.
 from math import factorial, gcd
 
 print(factorial(6))
 print(factorial(10))
 
-print(gcd(12,18))
+print(gcd(12, 18))
 
 # 임포트할 모듈에 별칭을 지정하여 사용하기
 import statistics as st
@@ -19,3 +19,5 @@ print('표준편차:', st.stdev(li))
 from math import factorial as fac
 
 print(fac(8))
+
+

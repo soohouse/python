@@ -23,7 +23,6 @@
 5. TypeError: 연산 수행 시 피연산자의 데이터 타입이 올바르지
 않을 경우 발생합니다.
 '''
-
 # NameError
 # print(apple)
 # insert(10)
@@ -35,7 +34,7 @@
 s = 'hello'
 # print(s[6])
 d = {}
-# print(d['멍멍이])
+# print(d['멍멍이'])
 
 # TypeError
 # print(10 ** '메롱')
@@ -52,7 +51,7 @@ except ValueError:
 except ZeroDivisionError:
     print('0으로 나눌 수 없습니다!')
 except IndexError:
-    print('인덱스 범위를 벗어났어요!')
+    print('인덱스 범위를 벗어났어요')
 
 '''
 finally 키워드는 예외 발생 여부와 상관없이
@@ -63,8 +62,11 @@ pets = ['거북이', '강아지', '고양이']
 for n in range(4):
     try:
         print(pets[n], '키우고 싶다~')
+
     except:
-        print('애완동물의 정보가 없습니다~')
+        print('애완동물의 정보가 없습니다.')
+
     finally:
         print('아무튼 실행되는 문장입니다.')
         print('-' * 40)
+
